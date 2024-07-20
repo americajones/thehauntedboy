@@ -38,7 +38,7 @@ document.addEventListener("keydown", (e) => {
         }
         if (sourceNum < 10) {
             let newNewNum = sourceNum.toString().padStart(2, '0');
-            // console.log("newnum is: " + newNewNum);
+            console.log("newnum is: " + newNewNum);
             let final = "images/" + newNewNum + ".jpg";
             nextImage.src = final;
         } else {
@@ -46,7 +46,7 @@ document.addEventListener("keydown", (e) => {
             nextImage.src = final;
         }
         fullImg.src = nextImage.src;
-        // console.log("new sourceNum is:" + sourceNum);
+        console.log("new sourceNum is:" + sourceNum);
     } else if (overlay.style.visibility == "visible" && e.key == "ArrowLeft") {
         if (sourceNum > 1) {
             sourceNum--;
