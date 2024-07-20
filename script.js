@@ -31,43 +31,43 @@ pics.forEach((pic) => {
     });
 });
 
-document.addEventListener("keydown", (e) => {
-    if (overlay.style.visibility == "visible" && e.key == "ArrowRight") {
-        if (sourceNum < 406) {
-            sourceNum++;
-        }
-        if (sourceNum < 10) {
-            let newNewNum = sourceNum.toString().padStart(2, '0');
-            console.log("newnum is: " + newNewNum);
-            let final = "images/" + newNewNum + ".jpg";
-            nextImage.src = final;
-        } else {
-            let final = "images/" + sourceNum + ".jpg";
-            nextImage.src = final;
-        }
-        fullImg.src = nextImage.src;
-        console.log("new sourceNum is:" + sourceNum);
-    } else if (overlay.style.visibility == "visible" && e.key == "ArrowLeft") {
-        if (sourceNum > 1) {
-            sourceNum--;
-        }
-        if (sourceNum < 10) {
-            let newNewNum = sourceNum.toString().padStart(2, '0');
-            // console.log("newnum is: " + newNewNum);
-            let final = "images/" + newNewNum + ".jpg";
-            nextImage.src = final;
-        } else if (sourceNum < 1) {
-            sourceNum = 1;
-        } else {
-            let final = "images/" + sourceNum + ".jpg";
-            nextImage.src = final;
-        }
-        fullImg.src = nextImage.src;
-        // console.log("new sourceNum is:" + sourceNum);
+// document.addEventListener("keydown", (e) => {
+//     if (overlay.style.visibility == "visible" && e.key == "ArrowRight") {
+//         if (sourceNum < 406) {
+//             sourceNum++;
+//         }
+//         if (sourceNum < 10) {
+//             let newNewNum = sourceNum.toString().padStart(2, '0');
+//             console.log("newnum is: " + newNewNum);
+//             let final = "images/" + newNewNum + ".jpg";
+//             nextImage.src = final;
+//         } else {
+//             let final = "images/" + sourceNum + ".jpg";
+//             nextImage.src = final;
+//         }
+//         fullImg.src = nextImage.src;
+//         console.log("new sourceNum is:" + sourceNum);
+//     } else if (overlay.style.visibility == "visible" && e.key == "ArrowLeft") {
+//         if (sourceNum > 1) {
+//             sourceNum--;
+//         }
+//         if (sourceNum < 10) {
+//             let newNewNum = sourceNum.toString().padStart(2, '0');
+//             // console.log("newnum is: " + newNewNum);
+//             let final = "images/" + newNewNum + ".jpg";
+//             nextImage.src = final;
+//         } else if (sourceNum < 1) {
+//             sourceNum = 1;
+//         } else {
+//             let final = "images/" + sourceNum + ".jpg";
+//             nextImage.src = final;
+//         }
+//         fullImg.src = nextImage.src;
+//         // console.log("new sourceNum is:" + sourceNum);
 
-    }
+//     }
 
-});
+// });
 
 
 
