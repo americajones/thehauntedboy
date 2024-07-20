@@ -23,11 +23,11 @@ pics.forEach((pic) => {
         fullImg.src = pic.src;
         let srcString;
         srcString = JSON.stringify(pic.src);
-        // console.log(srcString);
+        console.log(srcString);
         overlay.append(fullImg);
         overlay.style.visibility = "visible";
         sourceNum = srcString.substring(59, 60);
-        // console.log(Number(sourceNum));
+        console.log(Number(sourceNum));
     });
 });
 
